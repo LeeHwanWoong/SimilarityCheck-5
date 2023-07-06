@@ -35,5 +35,4 @@ public:
 
 		return static_cast<int>((sameCnt / totalCnt) * 40);
 	}
-private:
 };
