@@ -25,6 +25,7 @@ TEST_F(SimilarityCheckerFixture, TC4) {
 
 TEST_F(SimilarityCheckerFixture, TC5) {
 	EXPECT_EQ(sc.CheckLength("A", "BBB"), 0);
+}
 
 TEST(AlphaCheck, TC1) {
 	SimilarityChecker sc;

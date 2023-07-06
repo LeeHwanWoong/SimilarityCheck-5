@@ -4,6 +4,10 @@ using namespace std;
 class SimilarityChecker
 {
 public:
+	int CheckSimilarity(string s1, string s2)
+	{
+		return CheckLength(s1, s2) + CheckAlpha(s1, s2);
+	}
 
 	int CheckLength(string s1, string s2)
 	{
@@ -29,7 +33,7 @@ public:
 		return ((1.0 - GAP / shorter) * 60);
 	}
   
-  void CountDiffAlhpa(string s, bool* AllAlpha)
+	void CountDiffAlhpa(string s, bool* AllAlpha)
 	{
 		for (int i = 0; i < s.length(); ++i)
 		{
