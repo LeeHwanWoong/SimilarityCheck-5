@@ -19,6 +19,11 @@ public:
 			shorter = s1.length();
 		}
 
+		if(longer/shorter >=2)
+		{
+			return 0;
+		}
+
 		GAP = longer - shorter;
 		return ((1.0 - GAP / shorter) * 60);
 	}
